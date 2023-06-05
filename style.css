@@ -161,7 +161,7 @@ body {
   align-items: center;
 }
 
-.header-title h1 {
+.header-title h2 {
   font-family: var(--primary-font);
 }
 
@@ -412,7 +412,7 @@ body {
   width: 50%;
 }
 
-.my-details h1 {
+.my-details h2 {
   font-family: var(--primary-font);
   font-size: 72px;
   font-weight: 400;
@@ -688,7 +688,7 @@ body {
     margin-top: 24px;
   }
 
-  .project-title h1 {
+  .project-title h2 {
     font-size: 40px;
     font-weight: 400;
   }
@@ -761,7 +761,7 @@ body {
     padding-bottom: 140px;
   }
 
-  .my-details h1 {
+  .my-details h2 {
     text-align: start;
   }
 
