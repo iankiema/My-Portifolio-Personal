@@ -79,7 +79,7 @@ body {
   height: calc(100% - 72px);
   width: 100%;
   position: relative;
-  padding: 0% 2%;
+  padding-left: 36px;
   background-image: url(images/Illustration-header.png);
   background-repeat: no-repeat;
   background-position: right;
@@ -109,7 +109,7 @@ body {
   position: relative;
   flex-direction: column;
   width: 50%;
-  margin-left: 3%;
+  margin-left: 87px;
 }
 
 .info-header {
@@ -348,7 +348,7 @@ body {
   right: 16px;
 }
 
-.showcase-detail h1 {
+.showcase-detail h2 {
   font-family: var(--primary-font);
   font-style: normal;
   font-weight: 400;
@@ -489,7 +489,7 @@ body {
   margin-right: 3.3%;
 }
 
-.contact-message h2 {
+.contact-message p {
   font-family: var(--secondary-font);
   font-style: normal;
   font-weight: 700;
@@ -603,26 +603,42 @@ body {
     width: 100%;
     background-image: url(images/Group.png);
     background-repeat: no-repeat;
-    background-position: 100% 110%;
+    background-position: 96% 100%;
+    background-size: 30% 50%;
     display: flex;
     flex-direction: column-reverse;
     align-items: flex-start;
     justify-content: center;
-    position: relative;
-    padding: 0 24px;
+    margin: 0 24px;
+    padding-left: 0;
+    padding-right: 20px;
   }
 
   .main-info {
     width: 90%;
     padding: 0;
+    margin-left: 0;
   }
 
   .social-icons {
+    display: flex;
     flex-direction: row;
+    justify-content: center;
+  }
+
+  .social-icons li{
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+    margin-right: 22px;
+  }
+
+  .social-icons li a{
+    width: 50%;
   }
 
   .icons {
-    margin-left: 21px;
+    justify-content: center;
   }
 
   .info-header {
@@ -639,6 +655,7 @@ body {
   }
 
   .info-details {
+    width: 80%;
     max-height: 123px;
     font-family: "Poppins", sans-serif;
     font-style: normal;
@@ -646,6 +663,7 @@ body {
     font-size: 16px;
     line-height: 24px;
     color: #f4f5f7;
+    margin-bottom: 0;
   }
 
   /* Flex recent work */
@@ -809,7 +827,7 @@ body {
     margin-top: 24px;
   }
 
-  .contact-message h2 {
+  .contact-message p {
     font-size: 32px;
     line-height: 44px;
   }
@@ -826,17 +844,22 @@ body {
     width: 100%;
     background-image: url(images/Group.png);
     background-repeat: no-repeat;
-    background-position: 100% 110%;
+    background-position: 91% 110%;
+    background-size: 40% 52%;
     display: flex;
     flex-direction: column-reverse;
     align-items: flex-start;
     justify-content: center;
     position: relative;
-    padding: 0 24px;
+    padding-right: 0;
   }
 
   .main-info {
     padding: 0;
+  }
+
+  .main-info p{
+    width: 100%;
   }
 
   .info-header {
@@ -848,6 +871,7 @@ body {
   }
 
   .info-details {
+    width: 90%;
     max-height: 123px;
     max-width: 327px;
     font-family: "Poppins", sans-serif;
