@@ -626,14 +626,14 @@ body {
     justify-content: center;
   }
 
-  .social-icons li{
+  .social-icons li {
     width: 50%;
     justify-content: center;
     align-items: center;
     margin-right: 22px;
   }
 
-  .social-icons li a{
+  .social-icons li a {
     width: 50%;
   }
 
@@ -858,7 +858,7 @@ body {
     padding: 0;
   }
 
-  .main-info p{
+  .main-info p {
     width: 100%;
   }
 
