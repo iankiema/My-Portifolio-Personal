@@ -405,10 +405,8 @@ body {
 .showcase-detail ul {
   list-style-type: none;
   display: flex;
-  margin-bottom: 22px;
   width: 100%;
   padding-top: 12px;
-  padding-bottom: 12px;
   justify-content: start;
   align-items: start;
 }
@@ -1004,7 +1002,7 @@ body {
   }
 }
 
-/* Desktop View */
+/* Desktop Responsive  */
 
 @media only screen and (min-width: 992px) {
   .header-container {
