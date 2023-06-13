@@ -12,6 +12,7 @@
   padding: 0;
   box-sizing: border-box;
   border: 1 solid green;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -21,11 +22,14 @@ body {
 .header-container {
   position: relative;
   width: 100%;
-  height: 100vh;
+  height: auto;
   margin: 0;
   display: flex;
   flex-direction: column;
   background-color: #1c1a19;
+  background-image: url(images/Illustration-header.png);
+  background-repeat: no-repeat;
+  background-position: right;
 }
 
 .navbar {
@@ -38,15 +42,27 @@ body {
   align-items: center;
 }
 
-.nav-links {
-  height: 30px;
-  list-style: none;
+.nav-container {
+  width: 100%;
+  display: flex;
   align-items: center;
 }
 
+.nav-links {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  height: 100%;
+  list-style: none;
+  align-items: center;
+  text-align: end;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-right: 26px;
+}
+
 .nav-links li {
-  margin-left: 2.5rem;
-  display: inline-block;
+  margin-left: 32px;
 }
 
 .nav-links li a {
@@ -78,11 +94,9 @@ body {
 .main-container {
   height: calc(100% - 72px);
   width: 100%;
+  margin-top: 192px;
+  margin-bottom: 251px;
   position: relative;
-  padding-left: 36px;
-  background-image: url(images/Illustration-header.png);
-  background-repeat: no-repeat;
-  background-position: right;
   display: flex;
   align-items: center;
 }
@@ -93,6 +107,7 @@ body {
   justify-content: center;
   align-items: center;
   cursor: pointer;
+  margin-left: 36px;
 }
 
 .social-icons li {
@@ -108,7 +123,7 @@ body {
   display: flex;
   position: relative;
   flex-direction: column;
-  width: 50%;
+  width: 40%;
   margin-left: 87px;
 }
 
@@ -150,7 +165,7 @@ body {
   flex-direction: column;
   height: 100%;
   width: 100%;
-  padding: 134px 50px 130px 50px;
+  padding: 134px 141px 130px 141px;
 }
 
 .project-title {
@@ -161,12 +176,24 @@ body {
   align-items: center;
 }
 
+.header-title {
+  min-width: 315px;
+  min-height: 52px;
+  margin-right: 24px;
+}
+
 .header-title h2 {
   font-family: var(--primary-font);
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 52px;
+  font-size: normal;
+  color: #091e42;
 }
 
 .line-container {
-  width: 75%;
+  width: 70%;
+  border: 1px solid #212121;
 }
 
 .project-container {
@@ -202,7 +229,7 @@ body {
   display: flex;
   position: relative;
   flex-direction: column;
-  width: 50%;
+  width: 45%;
 }
 
 .main-content h2 {
@@ -213,7 +240,7 @@ body {
   font-size: 40px;
   line-height: 52px;
   color: #091e42;
-  margin-bottom: 24px;
+  margin-bottom: 14px;
 }
 
 .main-content p {
@@ -223,7 +250,8 @@ body {
   font-weight: 400;
   font-size: 20px;
   line-height: 28px;
-  margin-bottom: 24px;
+  color: #091e42;
+  margin-bottom: 14px;
 }
 
 .main-content ul {
@@ -264,8 +292,9 @@ body {
 .main-content button {
   padding: 12px;
   background: var(--primary-color);
+  width: 124px;
+  height: 48px;
   border: none;
-  width: 40%;
   font-family: var(--secondary-font);
   font-style: normal;
   font-weight: 700;
@@ -326,7 +355,7 @@ body {
 
 .showcase {
   position: relative;
-  width: 100%;
+  max-width: 369px;
   height: auto;
 }
 
@@ -342,6 +371,8 @@ body {
 }
 
 .showcase-detail {
+  display: flex;
+  flex-direction: column;
   position: absolute;
   bottom: 30px;
   left: 16px;
@@ -425,8 +456,8 @@ body {
   font-family: var(--secondary-font);
   font-style: normal;
   font-weight: 400;
-  font-size: 17px;
-  line-height: 24px;
+  font-size: 20px;
+  line-height: 32px;
   margin-bottom: 24px;
   color: #fff;
 }
@@ -439,8 +470,7 @@ body {
 .my-abilities {
   display: flex;
   width: 100%;
-  justify-content: space-around;
-  margin-bottom: 87px;
+  justify-content: space-between;
 }
 
 .skills h3 {
@@ -485,8 +515,8 @@ body {
 }
 
 .contact-message {
-  width: 36%;
-  margin-right: 3.3%;
+  width: 39%;
+  margin-right: 6.3%;
 }
 
 .contact-message p {
@@ -508,8 +538,13 @@ body {
 .contact-form input {
   border: none;
   border-bottom: 1px solid #dbd8d7;
-  padding: 14px 0;
+  padding: 14px 12px;
   margin-bottom: 24px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 15px;
+  font-weight: 25px;
+  font-weight: 400;;
+  color: #979493;
 }
 
 .contact-form textarea {
@@ -526,10 +561,12 @@ body {
 
 .first-name {
   width: 50%;
+  padding-left: 16px;
 }
 
 .second-name {
   width: 49%;
+  padding-left: 16px;
 }
 
 .full-name {
@@ -559,6 +596,10 @@ body {
   align-items: center;
 }
 
+.con-icons li{
+  margin-right: 20px;
+}
+
 .icons-pg {
   width: 20px;
 }
@@ -580,11 +621,22 @@ body {
 /* Flex Overall Layout For Mobile Responsiveness */
 
 @media only screen and (max-width: 768px) {
+  .header-container{
+    background-image: url(images/Group.png);
+    background-repeat: no-repeat;
+    background-position: 100% 110%;
+    background-size: 30% 43%;
+  }
+
   .navbar {
     flex-direction: column;
     position: relative;
     align-items: start;
     justify-content: center;
+  }
+
+  .nav-links{
+    display: none;
   }
 
   .fa-bars {
@@ -594,24 +646,20 @@ body {
     right: 32px;
   }
 
-  .nav-links {
+  .nav-container {
     display: none;
   }
 
   .main-container {
-    height: 100%;
+    height: auto;
     width: 100%;
-    background-image: url(images/Group.png);
-    background-repeat: no-repeat;
-    background-position: 96% 100%;
-    background-size: 30% 50%;
     display: flex;
     flex-direction: column-reverse;
     align-items: flex-start;
     justify-content: center;
-    margin: 0 24px;
-    padding-left: 0;
-    padding-right: 20px;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 120px 24px 100px 24px;
   }
 
   .main-info {
@@ -623,14 +671,17 @@ body {
   .social-icons {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: start;
+    margin-top: 20px;
+    margin-left: 0;
+    padding-top: 0;
   }
 
   .social-icons li {
     width: 50%;
     justify-content: center;
     align-items: center;
-    margin-right: 22px;
+    padding: 0 10px;
   }
 
   .social-icons li a {
@@ -639,6 +690,7 @@ body {
 
   .icons {
     justify-content: center;
+    padding-top: 0;
   }
 
   .info-header {
@@ -666,7 +718,7 @@ body {
     margin-bottom: 0;
   }
 
-  /* Flex recent work */
+  /* Mobile Flex recent work */
 
   .work-container {
     padding-left: 24px;
@@ -731,6 +783,7 @@ body {
 
   .project-container {
     grid-template-columns: auto;
+    justify-content: center;
   }
 
   .showcase button {
@@ -750,15 +803,16 @@ body {
   .about-me {
     padding: 0 24px;
     background-image: url(images/Frame.png);
-    background-position: 100% 13%;
-    background-size: 25%;
+    background-position: 100% 20%;
+    background-size: 45% 13%;
   }
 
   .my-details {
     justify-content: start;
     width: 100%;
-    padding-top: 120px;
-    padding-bottom: 140px;
+    margin-top: 120px;
+    margin-bottom: 221px;
+    padding-bottom: 0;
   }
 
   .my-details h2 {
@@ -767,6 +821,7 @@ body {
 
   .my-details p {
     margin-bottom: 36px;
+    font-size: 16px;
   }
 
   .my-details button {
@@ -786,6 +841,8 @@ body {
     text-align: center;
   }
 
+  /* Responsive Contact form*/
+
   .contact {
     flex-direction: column;
     align-items: center;
@@ -796,6 +853,7 @@ body {
   .contact-container {
     flex-direction: column;
     width: 100%;
+    margin-bottom: 104px;
   }
 
   .contact-message {
@@ -819,6 +877,7 @@ body {
 
   .full-name {
     display: block;
+    padding-left: 16px;
   }
 
   .contact-form button {
@@ -827,14 +886,14 @@ body {
     margin-top: 24px;
   }
 
-  .contact-message p {
-    font-size: 32px;
-    line-height: 44px;
-  }
 
   .first-name,
   .second-name {
     display: none;
+  }
+
+  .con-icons li {
+    margin-right: 0;
   }
 }
 
@@ -842,10 +901,6 @@ body {
   .main-container {
     height: 100%;
     width: 100%;
-    background-image: url(images/Group.png);
-    background-repeat: no-repeat;
-    background-position: 91% 110%;
-    background-size: 40% 52%;
     display: flex;
     flex-direction: column-reverse;
     align-items: flex-start;
@@ -883,8 +938,8 @@ body {
   }
 
   .about-me {
-    background-position: 100% 21%;
-    background-size: 35%;
+    background-position: 100% 23%;
+    background-size: 45% 13%;
   }
 
   .my-details {
@@ -914,5 +969,120 @@ body {
     height: 5px;
     background: #0d151e;
     border-radius: 10px;
+  }
+}
+
+@media only screen and (min-width: 768px){
+  .header-container {
+    background-size: 40% 100%;
+  }
+
+  .main-info {
+    margin-left: 50px;
+    width: 50%;
+  }
+
+  .main-content h2 {
+    font-size: 35px;
+  }
+
+  .main-content p {
+    font-size: 15px;
+  }
+
+  .line-container {
+    width: 70%;
+    margin-left: 24px;
+  }
+
+  .project-container {
+    grid-template-columns: auto auto;
+  }
+
+  .about-me {
+    padding: 130px 50px;
+    background-size: 45% 25%;
+  }
+
+  .my-details h2 {
+    font-size: 68px;
+  }
+
+  .skills h3 {
+    font-size: 24px;
+  }
+
+  .skills ul li {
+    font-size: 18px;
+  }
+
+  .contact {
+    padding: 130px 40px;
+  }
+
+  .first-name {
+    width: 100%;
+  }
+
+  .second-name {
+    width: 100%;
+  }
+}
+
+/* Desktop View */
+
+@media only screen and (min-width:992px) {
+  .header-container {
+    background-size: 40% 100%;
+  }
+
+  .main-info {
+    margin-left: 87px;
+  }
+
+  .main-content h2 {
+    font-size: 40px;
+  }
+
+  .main-content p {
+    font-size: 20px;
+  }
+
+  .header-title{
+    min-width: 315px;
+    min-height: 52px;
+  }
+
+  .line-container {
+    width: 70%;
+  }
+
+  .project-container {
+    grid-template-columns: auto auto auto;
+  }
+
+  .about-me {
+    padding: 130px 140px;
+    background-size: 40% 25%;
+  }
+
+  .skills h3 {
+    font-size: 32px;
+  }
+
+  .skills ul li {
+    font-size: 22px;
+  }
+
+  .contact {
+    padding: 130px 134px 26px 130px;
+  }
+
+  .first-name {
+    width: 49%;
+  }
+
+  .second-name {
+    width: 49%;
   }
 }
