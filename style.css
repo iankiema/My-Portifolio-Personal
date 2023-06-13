@@ -192,7 +192,7 @@ body {
 
 .line-container {
   width: 70%;
-  border: 1px solid #212121;
+  border: 0 solid #212121;
 }
 
 .project-container {
@@ -562,18 +562,8 @@ body {
   border: none;
 }
 
-.first-name {
-  width: 50%;
-  padding-left: 16px;
-}
-
-.second-name {
-  width: 49%;
-  padding-left: 16px;
-}
-
 .full-name {
-  display: none;
+  display: block;
 }
 
 .contact-form button:hover {
