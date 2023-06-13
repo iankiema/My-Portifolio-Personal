@@ -260,6 +260,10 @@ body {
   width: 100%;
 }
 
+.con-icons li {
+  margin-left: 20px;
+}
+
 .main-content ul li {
   padding: 10px 12px;
   border: 1px solid #8993a4;
@@ -593,10 +597,6 @@ body {
   list-style-type: none;
   justify-content: center;
   align-items: center;
-}
-
-.con-icons li {
-  margin-left: 20px;
 }
 
 .icons-pg {
