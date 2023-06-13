@@ -167,7 +167,7 @@ If you like this project give it a star⭐️.
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-I would like to thank Microverse for the overwhelming support.
+I would like to thank Microverse for the overwhelming support and also thank Faiz Mohammad for assisting me in this project.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
