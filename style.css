@@ -595,6 +595,10 @@ body {
   align-items: center;
 }
 
+.con-icons li {
+  margin-left: 20px;
+}
+
 .icons-pg {
   width: 20px;
 }
@@ -767,7 +771,6 @@ body {
   }
 
   .con-icons li {
-    padding-right: 20px;
     margin-right: 20px;
   }
 
