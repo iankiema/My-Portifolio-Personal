@@ -187,7 +187,6 @@ body {
   font-size: 40px;
   font-weight: 400;
   line-height: 52px;
-  font-size: normal;
   color: #091e42;
 }
 
@@ -543,7 +542,7 @@ body {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-size: 15px;
   font-weight: 25px;
-  font-weight: 400;;
+  font-weight: 400;
   color: #979493;
 }
 
@@ -596,10 +595,6 @@ body {
   align-items: center;
 }
 
-.con-icons li{
-  margin-right: 20px;
-}
-
 .icons-pg {
   width: 20px;
 }
@@ -621,7 +616,7 @@ body {
 /* Flex Overall Layout For Mobile Responsiveness */
 
 @media only screen and (max-width: 768px) {
-  .header-container{
+  .header-container {
     background-image: url(images/Group.png);
     background-repeat: no-repeat;
     background-position: 100% 110%;
@@ -635,7 +630,7 @@ body {
     justify-content: center;
   }
 
-  .nav-links{
+  .nav-links {
     display: none;
   }
 
@@ -773,6 +768,7 @@ body {
 
   .con-icons li {
     padding-right: 20px;
+    margin-right: 20px;
   }
 
   .main-content ul li {
@@ -894,10 +890,6 @@ body {
   .second-name {
     display: none;
   }
-
-  .con-icons li {
-    margin-right: 0;
-  }
 }
 
 @media only screen and (max-width: 375px) {
@@ -975,7 +967,7 @@ body {
   }
 }
 
-@media only screen and (min-width: 768px){
+@media only screen and (min-width: 768px) {
   .header-container {
     background-size: 40% 100%;
   }
@@ -1034,7 +1026,7 @@ body {
 
 /* Desktop View */
 
-@media only screen and (min-width:992px) {
+@media only screen and (min-width: 992px) {
   .header-container {
     background-size: 40% 100%;
   }
@@ -1051,7 +1043,7 @@ body {
     font-size: 20px;
   }
 
-  .header-title{
+  .header-title {
     min-width: 315px;
     min-height: 52px;
   }
