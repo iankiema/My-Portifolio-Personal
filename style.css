@@ -855,14 +855,6 @@ body {
     justify-content: center;
   }
 
-  .first-name {
-    width: 100%;
-  }
-
-  .second-name {
-    width: 100%;
-  }
-
   .full-name {
     display: block;
     padding-left: 16px;
@@ -877,11 +869,6 @@ body {
   .contact-message p {
     font-size: 32px;
     line-height: 44px;
-  }
-
-  .first-name,
-  .second-name {
-    display: none;
   }
 }
 
