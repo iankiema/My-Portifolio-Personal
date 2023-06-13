@@ -171,7 +171,7 @@ body {
 
 .project-container {
   position: relative;
-  float:right;
+  float: right;
   grid-template-columns: auto auto auto;
   gap: 24px;
   width: 100%;
@@ -825,11 +825,6 @@ body {
     width: 50%;
     margin: auto;
     margin-top: 24px;
-  }
-
-  .contact-message p {
-    font-size: 32px;
-    line-height: 44px;
   }
 
   .contact-message p {
