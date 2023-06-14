@@ -139,9 +139,9 @@ Run this  command:
 ## 🔭 Future Features <a name="future-features"></a>
 
 
-- [ ] **About Me**
-- [ ] **Portifolio**
-- [ ] **Contact**
+- [ ] **Working Menubar**
+- [ ] **Working See project button**
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

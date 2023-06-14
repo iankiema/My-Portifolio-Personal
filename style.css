@@ -289,7 +289,9 @@ body {
   font-size: 17px;
   line-height: 24px;
   font-weight: 700;
+  outline: none;
   cursor: pointer;
+  z-index: 1;
 }
 
 .main-content button {
@@ -359,18 +361,16 @@ body {
 .showcase {
   position: relative;
   max-width: 369px;
-  height: auto;
+  height: 100%;
+  background-image: url(images/img1.png);
+  transition: 0.5 ease;
 }
 
 .showcase-image {
   position: relative;
   width: 100%;
-  height: auto;
-}
-
-.showcase img {
-  width: 100%;
-  height: auto;
+  height: 100%;
+  z-index: 3;
 }
 
 .showcase-detail {
@@ -380,6 +380,19 @@ body {
   bottom: 30px;
   left: 16px;
   right: 16px;
+  z-index: 3;
+}
+
+.showcase:hover {
+  .showcase-detail,
+  .showcase-image {
+    display: none;
+  }
+}
+
+.showcase img {
+  width: 100%;
+  height: 100%;
 }
 
 .showcase-detail h2 {
@@ -405,10 +418,8 @@ body {
 .showcase-detail ul {
   list-style-type: none;
   display: flex;
-  margin-bottom: 22px;
   width: 100%;
   padding-top: 12px;
-  padding-bottom: 12px;
   justify-content: start;
   align-items: start;
 }
@@ -773,6 +784,10 @@ body {
     justify-content: center;
   }
 
+  .showcase {
+    margin-top: 20px;
+  }
+
   .showcase button {
     padding: 12px;
     bottom: 0;
@@ -855,14 +870,6 @@ body {
     justify-content: center;
   }
 
-  .first-name {
-    width: 100%;
-  }
-
-  .second-name {
-    width: 100%;
-  }
-
   .full-name {
     display: block;
     padding-left: 16px;
@@ -877,11 +884,6 @@ body {
   .contact-message p {
     font-size: 32px;
     line-height: 44px;
-  }
-
-  .first-name,
-  .second-name {
-    display: none;
   }
 }
 
@@ -1017,7 +1019,7 @@ body {
   }
 }
 
-/* Desktop View */
+/* Desktop Responsive  */
 
 @media only screen and (min-width: 992px) {
   .header-container {
