@@ -180,7 +180,8 @@ body {
   }
 
   to {
-
+    margin-left: 0%;
+    width: 100%;
   }
 }
 
@@ -415,6 +416,7 @@ body {
   .showcase-image {
     display: none;
   }
+
   transform: scale(1.05);
 }
 
@@ -519,7 +521,7 @@ body {
   }
 
   to {
-    margin-left:0%;
+    margin-left: 0%;
     width: 100%;
   }
 }
