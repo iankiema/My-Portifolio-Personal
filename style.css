@@ -87,7 +87,6 @@ body {
 }
 
 .logo-container {
-  position: absolute;
   width: 100%;
   height: auto;
 }
@@ -181,8 +180,7 @@ body {
   }
 
   to {
-    margin-left:0%;
-    width: 100%;
+
   }
 }
 
