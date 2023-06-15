@@ -63,7 +63,11 @@
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
+## 🚀 Live Demo <a name="live-demo"></a>
 
+- [Live Demo Link](https://iankiema.github.io/My-Portifolio-Personal/)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 ## 💻 Getting Started <a name="getting-started"></a>
@@ -149,7 +153,7 @@ Run this  command:
 
 ## 🤝 Contributing <a name="contributing"></a>
 
-Contributions, issues, and feature requests are welcome!
+Contributions, issues, and features requests are welcome!
 
 Feel free to check the [issues page](../../issues/).
 
