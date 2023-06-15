@@ -172,7 +172,7 @@ body {
     margin-left: 100%;
     width: 100%;
   }
-  
+
   75% {
     font-size: 100%;
     margin-left: 25%;
@@ -840,11 +840,18 @@ body {
     background-image: none;
   }
 
-  .showcase:hover{
+  .showcase-detail {
+    position: relative;
+    bottom: 60px;
+    padding-right: 20px;
+    z-index: 3;
+  }
+
+  .showcase:hover {
     .showcase-detail,
     .showcase-image {
-    display: block;
-  }
+      display: block;
+    }
 
     transform: none;
   }
@@ -853,13 +860,6 @@ body {
     padding: 12px;
     bottom: 0;
     font-size: 17px;
-    z-index: 3;
-  }
-
-  .showcase-detail {
-    position: relative;
-    bottom: 60px;
-    padding-right: 20px;
     z-index: 3;
   }
 
@@ -877,10 +877,10 @@ body {
 
   .showcase-detail ul {
     position: absolute;
-    bottom: 0px;
+    bottom: 0;
   }
 
-  /* About me mobile responsive*/
+  /* About me mobile responsive */
 
   .about-me {
     padding: 0 24px;

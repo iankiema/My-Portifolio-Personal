@@ -153,7 +153,7 @@ Run this  command:
 
 ## 🤝 Contributing <a name="contributing"></a>
 
-Contributions, issues, and feature requests are welcome!
+Contributions, issues, and features requests are welcome!
 
 Feel free to check the [issues page](../../issues/).
 
