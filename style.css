@@ -829,22 +829,52 @@ body {
   }
 
   .showcase {
+    position: relative;
     margin-top: 20px;
+    background-image: none;
+  }
+
+  .showcase:hover{
+    .showcase-detail,
+    .showcase-image {
+    display: block;
+  }
+
+    transform: none;
   }
 
   .showcase button {
     padding: 12px;
     bottom: 0;
     font-size: 17px;
+    z-index: 3;
   }
 
   .showcase-detail {
-    bottom: 30px;
+    position: relative;
+    bottom: 60px;
+    padding-right: 20px;
+    z-index: 3;
   }
 
-  .showcase-detail h1 {
-    margin-bottom: 12px;
+  .showcase-detail h2 {
+    position: absolute;
+    bottom: 155px;
+    width: 70%;
   }
+
+  .showcase-detail p {
+    display: flex;
+    position: absolute;
+    bottom: 72px;
+  }
+
+  .showcase-detail ul {
+    position: absolute;
+    bottom: 0px;
+  }
+
+  /* About me mobile responsive*/
 
   .about-me {
     padding: 0 24px;
