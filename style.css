@@ -3,8 +3,8 @@
 :root {
   --primary-font: "Crete Round", sans-serif;
   --secondary-font: "Inter", sans-serif;
-  --primary-color: #ff6b00;
-  --secondary-color: #f55800;
+  --primary-color: #943E00;
+  --secondary-color: #943E00;
 }
 
 * {
@@ -77,7 +77,7 @@ body {
 }
 
 .nav-links li a:hover {
-  color: #e05304;
+  color: #ff6b00;
 }
 
 .my-logo {
@@ -141,7 +141,7 @@ body {
   font-size: 72px;
   font-weight: 400;
   line-height: 81.5px;
-  color: var(--primary-color);
+  color: #ff6b00;
 }
 
 .info-title {
@@ -325,7 +325,7 @@ body {
 .main-content button {
   padding: 12px;
   background: var(--primary-color);
-  width: 124px;
+  width: 125px;
   height: 48px;
   border: none;
   font-family: var(--secondary-font);
@@ -492,7 +492,7 @@ body {
   font-size: 72px;
   font-weight: 400;
   line-height: 81.5px;
-  color: var(--primary-color);
+  color: #ff6b00;
   margin-bottom: 24px;
 }
 
