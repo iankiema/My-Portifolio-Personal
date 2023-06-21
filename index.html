@@ -7,266 +7,218 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
     <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <title>My Personal Portifolio</title>
 </head>
 <body>
-    <!--Header Page-->
-   <header class="header-container">
-
-        <nav class="navbar">
-            <div class="logo-container">
-                <a href="#"><img class="my-logo" src="images/Cizzla_logo.png" alt=""></a>
-            </div>
-
-            <ul class="nav-links">
-                <li><a class="links" href="#work-container">Portifolio</a></li>
-                <li><a class="links" href="#about-me">About</a></li>
-                <li><a class="links" href="#contact">Contact</a></li>
-                <li><a class="links" href="#"><img src="images/Icon - Mail.svg" alt=""></a></li>
-            </ul>
-
-                <i class="fas fa-bars"></i>
-        </nav>
-
-        <main class="main-container">
-
-            <ul class="social-icons">
-                <li><a href=""><img class="icons" src="images/github@2x.png" alt=""></a></li>
-                <li><a href=""><img class="icons" src="images/Linkedin icon@2x.png" alt=""></a></li>
-                <li><a href=""><img class="icons" src="images/angel list@2x.png" alt=""></a></li>
-                <li><a href=""><img class="icons" src="images/twitter@2x.png" alt=""></a></li>
-                <li><a href=""><img class="icons" src="images/medium@2x.png" alt=""></a></li>
-
-            </ul>
-
-            <div class="main-info">
-                <h1 class="info-header">Hey There.<br>I'm Ian.</h1>
-                <h2 class="info-title">I'm a Software Developer</h2>
-                <p class="info-details">I can help you build a product , feature or website. Look through some of my work and experience! If you like what you see and have a project you need coded,
-                don’t hesitate to contact me.</p>
-            </div>
-
-        </main>
-   </header>
-
-   <!-- Recent Work Section-->
-   <section class="work-container" id="work-container">
-
-        <div class="project-title">
-            <div class="header-title">
-                <h2>My Recent Works</h2>
-            </div>
-            <div class="line-container">
-                <hr>
-             </div>
-        </div>
-
-
-        <div class="main-project">
-
-            <div class="main-img">
-                <img src="images/Img Placeholder.png" alt="">
-            </div>
-
-            <div class="main-content">
-                <h2>Multi-Post Stories</h2>
-                <p>A daily selection of privately personalized reads; no accounts or sign-ups required. This has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.</p>
-                <ul>
-                    <li>CSS</li>
-                    <li>HTML</li>
-                    <li>Bootstrap</li>
-                    <li>Ruby</li>
+    <nav class="navbar navbar-expand-lg navbar-light bg-secondary fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href=""><img src="images/Cizzla_logo.png" alt="logo" width="80px"></a>
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0" >
+                    <li class="nav-item"><a class="nav-link text-warning px-lg-4 " href="#scrollspyPortifolio">Portifolio</a></li>
+                    <li class="nav-item"><a class="nav-link text-warning px-lg-4" href="#scrollspyAbout">About</a></li>
+                    <li class="nav-item"><a class="nav-link text-warning px-lg-4" href="#scrollspyContact">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link text-warning px-lg-4" href="#"><img src="images/Icon - Mail.svg" alt=""></a></li>
                 </ul>
-                <a href="" target="_blank"><button class="main-btn" type="button">See project</button></a>
-            </div>
-
-        </div>
-
-        <div class="project-container">
-
-            <div class="showcase">
-                <div class="showcase-image">
-                   <img src="images/Img Placeholder (3).png" alt="">
-                </div>
-
-                <div class="showcase-detail">
-                  <h2>Profesional Art Printing Data</h2>
-                  <p>A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry's standard.</p>
-                  <ul>
-                      <li>HTML</li>
-                      <li>Bootstrap</li>
-                      <li>Ruby</li>
-                  </ul>
-
-              </div>
-              <button class="showcase-btn">See project</button>
-            </div>
-
-            <div class="showcase">
-                <div class="showcase-image">
-                   <img src="images/Img Placeholder (3).png" alt="">
-                </div>
-
-                <div class="showcase-detail">
-                  <h2>Profesional Art Printing Data</h2>
-                  <p>A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry's standard.</p>
-                  <ul>
-                      <li>HTML</li>
-                      <li>Bootstrap</li>
-                      <li>Ruby</li>
-                  </ul>
-
-              </div>
-              <button class="showcase-btn" type="button">See project</button>
-            </div>
-
-            <div class="showcase">
-                <div class="showcase-image">
-                   <img src="images/Img Placeholder (2).png" alt="">
-                </div>
-
-                <div class="showcase-detail">
-                  <h2>Profesional Art Printing Data</h2>
-                  <p>A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry's standard.</p>
-                  <ul>
-                      <li>HTML</li>
-                      <li>Bootstrap</li>
-                      <li>Ruby</li>
-                  </ul>
-              </div>
-              <button class="showcase-btn" type="button">See project</button>
-            </div>
-
-            <div class="showcase">
-                <div class="showcase-image">
-                    <img src="images/Img Placeholder (4).png" alt="">
-                </div>
-                <div class="showcase-detail">
-                  <h2>Profesional Art Printing Data</h2>
-                  <p>A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry's standard.</p>
-                  <ul>
-                      <li>HTML</li>
-                      <li>Bootstrap</li>
-                      <li>Ruby</li>
-                  </ul>
-              </div>
-              <button class="showcase-btn" type="button">See project</button>
-            </div>
-
-            <div class="showcase">
-                <div class="showcase-image">
-                   <img src="images/Img Placeholder (3).png" alt="">
-                </div>
-
-                <div class="showcase-detail">
-                  <h2>Profesional Art Printing Data</h2>
-                  <p>A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry's standard.</p>
-                  <ul>
-                      <li>HTML</li>
-                      <li>Bootstrap</li>
-                      <li>Ruby</li>
-                  </ul>
-              </div>
-              <button class="showcase-btn" type="button">See project</button>
-            </div>
-
-            <div class="showcase">
-                <div class="showcase-image">
-                   <img src="images/Img Placeholder (2).png" alt="">
-                </div>
-
-                <div class="showcase-detail">
-                  <h2>Profesional Art Printing Data</h2>
-                  <p>A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry's standard.</p>
-                  <ul>
-                      <li>HTML</li>
-                      <li>Bootstrap</li>
-                      <li>Ruby</li>
-                  </ul>
-              </div>
-              <button class="showcase-btn" type="button">See project</button>
             </div>
         </div>
+    </nav>
 
-   </section>
+    <section class="main bg-dark py-lg-5 mx-0">
+        <div class="container">
+            <div class="container row py-lg-5">
+                <div class="col-lg-1">
+                    <ul class="navbar-nav justify-content-center">
+                        <li><a href=""><img class="icons" width="20px" src="images/github@2x.png" alt="github"></a></li>
+                        <li><a href=""><img class="icons" width="20px" src="images/Linkedin icon@2x.png" alt="LinkedIn"></a></li>
+                        <li><a href=""><img class="icons" width="20px" src="images/angel list@2x.png" alt="Angel List"></a></li>
+                        <li><a href=""><img class="icons" width="20px" src="images/twitter@2x.png" alt="Twitter"></a></li>
+                        <li><a href=""><img class="icons" width="20px" src="images/medium@2x.png" alt="Medium"></a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-6">
+                    <h1 class="text-warning">Hey There.<br>I'm Ian.</h1>
+                    <h3 class="text-warning">I'm a Software Developer</h3>
+                    <p class="text-white">I can help you build a product , feature or website. Look through some of my work and experience! If you like what you see and have a project you need coded,
+                    don’t hesitate to contact me.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-   <!--About Me Section-->
+    <section class="recent-main bg-white" id="scrollspyPortifolio">
+        <div class="container-fluid mt-5">
+            <div class="row">
+                <div class="col-lg-7">
+                    <img class="img-fluid" src="images/Img Placeholder.png" alt="">
+                </div>
+                <div class="col-lg-4">
+                    <h1 class="text-dark">Multi-Post Stories</h1>
+                    <p class="text-dark">A daily selection of privately personalized reads; no accounts or sign-ups required. This has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.</p>
+                    <div class="navbar-nav">
+                        <ul class="list-group-horizontal-lg navbar-nav">
+                            <li class="border border-secondary px-3 py-2 m-1">CSS</li>
+                            <li class="border border-secondary px-3 py-2 m-1">HTML</li>
+                            <li class="border border-secondary px-3 py-2 m-1">Bootstrap</li>
+                            <li class="border border-secondary px-3 py-2 m-1">Ruby</li>
+                         </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-   <section class="about-me" id="about-me">
-       <div class="my-details">
-          <h2>About me</h2>
-          <p>Hey there! I can help you build a product, feature or website. Look through some of my work and experience! If you like what you see and have a project you need coded, don’t hesitate to contact me.</p>
-          <button>Get my resume</button>
-       </div>
+    <section class="recent bg-white justify-content-center m-0">
+        <div class="container m-lg-5 justify-content-center m-0">
+            <div class="container row">
+                <div class="col-4">
+                    <div class="card bg-dark text-white">
+                        <img src="images/Img Placeholder (2).png" class="card-img" alt="...">
+                        <div class="card-img-overlay">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        <p class="card-text">Last updated 3 mins ago</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="card bg-dark text-white">
+                        <img src="images/Img Placeholder (2).png" class="card-img" alt="...">
+                        <div class="card-img-overlay">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        <p class="card-text">Last updated 3 mins ago</p>
+                        </div>
+                    </div>
+                </div>
 
-       <div class="about-break">
-          <hr>
-       </div>
+                <div class="col-4">
+                    <div class="card bg-dark text-white">
+                        <img src="images/Img Placeholder (2).png" class="card-img" alt="...">
+                        <div class="card-img-overlay">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                            <p class="card-text">Last updated 3 mins ago</p>
+                        </div>
+                    </div>
+                </div>
 
-       <div class="my-abilities">
-          <div class="skills">
-                <h3><span><img src="images/Rectangle 55.png" alt=""></span>&nbsp; Language</h3>
-                <ul>
-                <li>Javascript</li>
-                <li>Ruby</li>
-                <li>HTML</li>
-                <li>CSS</li>
+            </div>
+        </div>
+        <div class="container m-lg-5 justify-content-center m-0">
+            <div class="container row">
+                <div class="col-4">
+                    <div class="card bg-dark text-white">
+                        <img src="images/Img Placeholder (2).png" class="card-img" alt="...">
+                        <div class="card-img-overlay">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        <p class="card-text">Last updated 3 mins ago</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="card bg-dark text-white">
+                        <img src="images/Img Placeholder (2).png" class="card-img" alt="...">
+                        <div class="card-img-overlay">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        <p class="card-text">Last updated 3 mins ago</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-4">
+                    <div class="card bg-dark text-white">
+                        <img src="images/Img Placeholder (2).png" class="card-img" alt="...">
+                        <div class="card-img-overlay">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                            <p class="card-text">Last updated 3 mins ago</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="row">
+                <div col-4></div>
+                <div col-4></div>
+                <div col-4></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="about bg-dark my-lg-5 py-lg-5" id="scrollspyAbout">
+        <div class="container">
+                <div class="col-lg-4 mb-lg-5 pb-lg-5">
+                    <h1 class="text-warning">About me</h1>
+                    <p class="text-white">Hey there! I can help you build a product, feature or website. Look through some of my work and experience! If you like what you see and have a project you need coded, don’t hesitate to contact me.</p>
+                    <button type="button" class="btn btn-warning">Get my resume</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="border-top px-lg-5 mx-lg-5"></div>
+
+        <div class="row mx-lg-5 my-lg-5">
+            <div class="col-4 text-white align-content-center justify-content-center px-lg-5 py-lg-5">
+                <h3 class="mb-5"><span><img src="images/Rectangle 55.png" alt="diamond icon"></span>&nbsp; Language</h3>
+                <ul class="navbar-nav align-content-center">
+                    <li class="pb-lg-3">Javascript</li>
+                    <li class="pb-lg-3">Ruby</li>
+                    <li class="pb-lg-3">HTML</li>
+                    <li class="pb-lg-3">CSS</li>
                 </ul>
-          </div>
-          <div class="skills">
-              <h3><span><img src="images/Rectangle 56.png" alt=""></span>&nbsp;&nbsp; Frameworks</h3>
-              <ul>
-                <li>React.js</li>
-                <li>Ruby on Rails</li>
-                <li>RSpec</li>
-                <li>Capyybara</li>
-                <li>Selenium</li>
-              </ul>
-          </div>
-          <div class="skills">
-              <h3><span><img src="images/Rectangle 57.png" alt=""></span>&nbsp; Skills</h3>
-              <ul>
-                <li>Database Management</li>
-                <li>Version Control</li>
-                <li>API Design</li>
-                <li>Web Development</li>
-              </ul>
-          </div>
-       </div>
-   </section>
-
-   <!---- Contact Section --->
-   <section class="contact">
-        <div  class="contact-container">
-            <div class="contact-message">
-                <p>I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.</p>
+            </div>
+            <div class="col-4 text-white align-content-center justify-content-center px-lg-5 py-lg-5">
+                <h3 class="mb-5"><span><img src="images/Rectangle 56.png" alt="diamond icon"></span>&nbsp; Frameworks</h3>
+                <ul class="navbar-nav align-content-center">
+                    <li class="pb-lg-3">React.js</li>
+                    <li class="pb-lg-3">Ruby on Rails</li>
+                    <li class="pb-lg-3">RSpec</li>
+                    <li class="pb-lg-3">Capybara</li>
+                    <li class="pb-lg-3">Selenium</li>
+                </ul>
+            </div>
+            <div class="col-4 text-white align-content-center justify-content-center px-lg-5 py-lg-5">
+                <h3 class="mb-5"><span><img src="images/Rectangle 57.png" alt="diamond icon"></span>&nbsp; Skills</h3>
+                <ul class="navbar-nav align-content-center">
+                    <li class="pb-lg-3">Data Management</li>
+                    <li class="pb-lg-3">Version Control</li>
+                    <li class="pb-lg-3">API Design</li>
+                    <li class="pb-lg-3">Web Development</li>
+                </ul>
             </div>
 
-            <form class="contact-form" action="https://formspree.io/f/mayzrnlw" method="POST">
-                <input class="full-name" type="text" placeholder="Full name" maxlength="30" required>
-                <input  type="email" placeholder="Email address" required>
-                <textarea name="comments" id="" cols="30" rows="3" placeholder="Write me something..." maxlength="500" required></textarea>
-                <button class="contact-btn" type="submit">Get in touch</button>
-            </form>
         </div>
+    </section>
 
-        <div class="contact-break"></div>
+    <section class="contatct py-5 " id="scrollspyContact">
+        <div class="container">
+            <div class="row">
+                <div class="col-5">
+                    <h2>I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.</h2>
+                </div>
+                <div class="col-7">
+                    <div class="mb-3">
 
-        <div class="footer">
-
-          <ul class="con-icons">
-                <li><a href=""><img class="icons-pg" src="images/Icon -GitHub.png" alt="Github"></a></li>
-                <li><a href=""><img class="icons-pg" src="images/Icon - Linkedin.png" alt="Linkedin"></a></li>
-                <li><a href=""><img class="icons-pg" src="images/Icon - Angelist.png" alt="Angelist"></a></li>
-                <li><a href=""><img class="icons-pg" src="images/Icon - Twitter.png" alt="Twitter"></a></li>
-                <li><a href=""><img class="icons-pg" src="images/Icon - Medium.png" alt="Medium"></a></li>
-          </ul>
-
-          <div class="bottom-border"></div>
+                        <input type="text" class="form-control border-0 border-bottom" id="formGroupExampleInput" placeholder="Fullname">
+                    </div>
+                     <div class="mb-3">
+                        <input type="email" class="form-control border-0 border-bottom" id="formGroupExampleInput2" placeholder="Email">
+                    </div>
+                    <div class="mb-3">
+                        <textarea class="flex-row" name="comments" id="" cols="70" rows="3" placeholder="Write me something..."></textarea>
+                    </div>
+                    <button class="btn btn-warning ">Get in touch</button>
+                </div>
+            </div>
         </div>
+    </section>
 
-   </section>
 
 
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>
