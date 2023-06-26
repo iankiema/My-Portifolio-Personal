@@ -25,7 +25,16 @@
                 <li><a class="links" href="#"><img src="images/Icon - Mail.svg" alt="mail"></a></li>
             </ul>
 
-                <i class="fas fa-bars"></i>
+            <div class="mobileLinks" id="mobileLinks">
+                <div class="cancel-btn"><img src="images/Icon - Cancel.svg" id="cancel-icon"></div>
+                <div id="mob-link">
+                    <a href="#work-container">Portifolio</a>
+                    <a href="#about-me">About</a>
+                    <a href="#contact">Contact</a>
+                </div>
+            </div>
+
+                <a href="javascript:void(0)"><i class="fas fa-bars" id="menu-bar"></i></a>
         </nav>
 
         <main class="main-container">
@@ -47,9 +56,9 @@
             </div>
 
         </main>
-   </header>
+    </header>
 
-   <!-- Recent Work Section-->
+            <!-- Recent Work Section-->
    <section class="work-container" id="work-container">
 
         <div class="project-title">
@@ -58,7 +67,7 @@
             </div>
             <div class="line-container">
                 <hr>
-             </div>
+            </div>
         </div>
 
 
@@ -84,7 +93,7 @@
 
         <div class="project-container">
 
-            <div class="showcase">
+            <div class="showcase" id="showcase">
                 <div class="showcase-image">
                    <img src="images/Img Placeholder (3).png" alt="project image">
                 </div>
@@ -99,10 +108,10 @@
                   </ul>
 
               </div>
-              <button class="showcase-btn">See project</button>
+              <button id="showcase-button"  class="showcase-btn">See project</button>
             </div>
 
-            <div class="showcase">
+            <div class="showcase" id="showcase">
                 <div class="showcase-image">
                    <img src="images/Img Placeholder (3).png" alt="project image">
                 </div>
@@ -117,10 +126,10 @@
                   </ul>
 
               </div>
-              <button class="showcase-btn" type="button">See project</button>
+              <button id="showcase-button"  class="showcase-btn" type="button">See project</button>
             </div>
 
-            <div class="showcase">
+            <div class="showcase" id="showcase">
                 <div class="showcase-image">
                    <img src="images/Img Placeholder (2).png" alt="project image">
                 </div>
@@ -134,10 +143,10 @@
                       <li>Ruby</li>
                   </ul>
               </div>
-              <button class="showcase-btn" type="button">See project</button>
+              <button id="showcase-button"  class="showcase-btn" type="button">See project</button>
             </div>
 
-            <div class="showcase">
+            <div class="showcase" id="showcase">
                 <div class="showcase-image">
                     <img src="images/Img Placeholder (4).png" alt="project image">
                 </div>
@@ -150,10 +159,10 @@
                       <li>Ruby</li>
                   </ul>
               </div>
-              <button class="showcase-btn" type="button">See project</button>
+              <button id="showcase-button"  class="showcase-btn" type="button">See project</button>
             </div>
 
-            <div class="showcase">
+            <div class="showcase" id="showcase">
                 <div class="showcase-image">
                    <img src="images/Img Placeholder (3).png" alt="project image">
                 </div>
@@ -167,10 +176,10 @@
                       <li>Ruby</li>
                   </ul>
               </div>
-              <button class="showcase-btn" type="button">See project</button>
+              <button id="showcase-button" class="showcase-btn" type="button">See project</button>
             </div>
 
-            <div class="showcase">
+            <div class="showcase" id="showcase">
                 <div class="showcase-image">
                    <img src="images/Img Placeholder (2).png" alt="project image">
                 </div>
@@ -184,11 +193,25 @@
                       <li>Ruby</li>
                   </ul>
               </div>
-              <button class="showcase-btn" type="button">See project</button>
+              <button id="showcase-button"  class="showcase-btn" type="button">See project</button>
             </div>
         </div>
 
    </section>
+
+
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <button class="close">&times</button>
+            <h2 id="popup-title"></h2>
+            <p id="popup-description"></p>
+            <img id="popup-image" src="" alt="Project Image">
+            <p id="popup-technologies"></p>
+            <a id="live-link" href="" target="_blank">Live Version</a>
+            <a id="source-link" href="" target="_blank">Source</a>
+        </div>
+    </div>
+
 
    <!--About Me Section-->
 
@@ -236,7 +259,7 @@
    </section>
 
    <!---- Contact Section --->
-   <section class="contact">
+   <section class="contact" id="contact">
         <div  class="contact-container">
             <div class="contact-message">
                 <p>I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.</p>
@@ -267,6 +290,6 @@
 
    </section>
 
-
+   <script src="app.js"></script>
 </body>
 </html>
