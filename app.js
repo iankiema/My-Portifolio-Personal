@@ -5,13 +5,13 @@ const cancelIcon = document.querySelector('#cancel-icon');
 const topNav = document.querySelector('.mobileLinks');
 const mobLink = document.querySelector('#mob-link');
 
-// function showMenuFunction() {
-//   if (topNav.style.display === 'none') {
-//     topNav.style.display = ('block');
-//   } else {
-//     topNav.style.display = ('none');
-//   }
-// }
+function showMenuFunction() {
+  if (topNav.style.display === 'none') {
+    topNav.style.display = ('block');
+  } else {
+    topNav.style.display = ('none');
+  }
+}
 
 function hideMenuFunction() {
   if (topNav.style.display === 'block') {

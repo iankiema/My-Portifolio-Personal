@@ -750,55 +750,57 @@ body {
     right: 32px;
   }
 
+  .mobileLinks {
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 30;
+    width: 100%;
+    height: 100vh;
+    background-color: #3e3c3c;
+    text-align: center;
+  }
 
-.mobileLinks {
-  display: none;
-  position: absolute;
-  top: 0;
-  right: 0;
-  left: 0;
-  z-index: 30;
-  width: 100%;
-  height: 100vh;
-  background-color: #3e3c3c;
-  text-align: center;
-}
+  .cancel-btn {
+    padding: 20px;
+    width: 100%;
+    height: 10%;
+    text-align: end;
+    justify-content: end;
+    align-items: center;
+  }
 
-.cancel-btn {
-  padding: 20px;
-  width: 100%;
-  height: 10%;
-  text-align: end;
-  justify-content: end;
-  align-items: center;
-}
+  .cancel-btn i {
+    width: 24px;
+    height: 24px;
+  }
 
-.cancel-btn i {
-  width: 24px;
-  height: 24px;
-}
+  .mobileLinks a {
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    display: block;
+    font-family: var(--secondary-font);
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 44px;
+    letter-spacing: 0;
+    text-align: left;
+    border-bottom: 1px solid #6f6c6b;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
 
-.mobileLinks a {
-  color: white;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-  display: block;
-  font-family: Inter;
-  font-size: 32px;
-  font-weight: 700;
-  line-height: 44px;
-  letter-spacing: 0em;
-  text-align: left;
-  border-bottom: 1px solid #6F6C6B;
-  margin-left: 20px;
-  margin-right: 20px;
-}
+  .social-icons li a {
+    width: 50%;
+  }
 
-.mobileLinks a:hover {
-  background-color: #fff5e1;
-  color: var(--secondary-color);
-}
+  .mobileLinks a:hover {
+    background-color: #fff5e1;
+    color: var(--secondary-color);
+  }
 
   .nav-container {
     display: none;
@@ -836,10 +838,6 @@ body {
     justify-content: center;
     align-items: center;
     padding: 0 10px;
-  }
-
-  .social-icons li a {
-    width: 50%;
   }
 
   .icons {
