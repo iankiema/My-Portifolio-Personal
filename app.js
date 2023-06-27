@@ -1,3 +1,4 @@
+/* eslint-disable prefer-destructuring */
 /* Menu Popup */
 
 const menuBar = document.querySelector('#menu-bar');
@@ -26,122 +27,107 @@ mobLink.addEventListener('click', () => { topNav.style.display = 'none'; });
 
 /* Details popup window */
 
-// const projects = [
-//   {
-//     name: 'Project 1',
-//     description: 'Description of Project 1',
-//     image: 'images/Img Placeholder.png',
-//     technologies: ['HTML', 'CSS', 'Javascript'],
-//     liveLink: 'https://example.com/project1',
-//     sourceLink: 'https://github.com/example/project1',
-//   },
-//   {
-//     name: 'Project 2',
-//     description: 'Description of Project 2',
-//     image: 'images/Img Placeholder (3).png',
-//     technologies: ['HTML', 'CSS', 'Javascript'],
-//     liveLink: 'https://example.com/project2',
-//     sourceLink: 'https://github.com/example/project2',
-//   },
-//   {
-//     name: 'Project 3',
-//     description: 'Description of Project 3',
-//     image: 'images/Img Placeholder (3).png',
-//     technologies: ['HTML', 'CSS', 'Javascript'],
-//     liveLink: 'https://example.com/project3',
-//     sourceLink: 'https://github.com/example/project3',
-//   },
-//   {
-//     name: 'Project 4',
-//     description: 'Description of Project 4',
-//     image: 'images/Img Placeholder (2).png',
-//     technologies: ['HTML', 'CSS', 'Javascript'],
-//     liveLink: 'https://example.com/project4',
-//     sourceLink: 'https://github.com/example/project4',
-//   },
-//   {
-//     name: 'Project 5',
-//     description: 'Description of Project 5',
-//     image: 'images/Img Placeholder (4).png',
-//     technologies: ['HTML', 'CSS', 'Javascript'],
-//     liveLink: 'https://example.com/project5',
-//     sourceLink: 'https://github.com/example/project5',
-//   },
-//   {
-//     name: 'Project 6',
-//     description: 'Description of Project 6',
-//     image: 'images/Img Placeholder (3).png',
-//     technologies: ['HTML', 'CSS', 'Javascript'],
-//     liveLink: 'https://example.com/project6',
-//     sourceLink: 'https://github.com/example/project6',
-//   },
-//   {
-//     name: 'Project 7',
-//     description: 'Description of Project 7',
-//     image: 'images/Img Placeholder (2).png',
-//     technologies: ['HTML', 'CSS', 'Javascript'],
-//     liveLink: 'https://example.com/project7',
-//     sourceLink: 'https://github.com/example/project7',
-//   },
-// ];
+const projects = [
+  {
+    name: 'Keeping track of hundreds  of components website',
+    name2: 'Multi Post Stories',
+    description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.',
+    image: 'images/Snapshoot Portfolio.jpg',
+    technologies: ['HTML', 'CSS', 'Javascript'],
+    liveLink: 'https://example.com/project1',
+    sourceLink: 'https://github.com/example/project1',
+  },
+  {
+    name: 'Keeping track of hundreds  of components website',
+    name2: 'Multi Post Stories',
+    description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.',
+    image: 'images/Snapshoot Portfolio.jpg',
+    technologies: ['HTML', 'CSS', 'Javascript'],
+    liveLink: 'https://example.com/project2',
+    sourceLink: 'https://github.com/example/project2',
+  },
+  {
+    name: 'Keeping track of hundreds  of components website',
+    name2: 'Multi Post Stories',
+    description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.',
+    image: 'images/Snapshoot Portfolio.jpg',
+    technologies: ['HTML', 'CSS', 'Javascript'],
+    liveLink: 'https://example.com/project3',
+    sourceLink: 'https://github.com/example/project3',
+  },
+  {
+    name: 'Keeping track of hundreds  of components website',
+    name2: 'Multi Post Stories',
+    description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s \n Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.',
+    image: 'images/Snapshoot Portfolio.jpg',
+    technologies: ['HTML', 'CSS', 'Javascript'],
+    liveLink: 'https://example.com/project4',
+    sourceLink: 'https://github.com/example/project4',
+  },
+  {
+    name: 'Keeping track of hundreds  of components website',
+    name2: 'Multi Post Stories',
+    description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.',
+    image: 'images/Snapshoot Portfolio.jpg',
+    technologies: ['HTML', 'CSS', 'Javascript'],
+    liveLink: 'https://example.com/project5',
+    sourceLink: 'https://github.com/example/project5',
+  },
+  {
+    name: 'Keeping track of hundreds  of components website',
+    name2: 'Multi Post Stories',
+    description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.',
+    image: 'images/Snapshoot Portfolio.jpg',
+    technologies: ['HTML', 'CSS', 'Javascript'],
+    liveLink: 'https://example.com/project6',
+    sourceLink: 'https://github.com/example/project6',
+  },
+  {
+    name: 'Keeping track of hundreds  of components website',
+    name2: 'Multi Post Stories',
+    description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.',
+    image: 'images/Snapshoot Portfolio.jpg',
+    technologies: ['HTML', 'CSS', 'Javascript'],
+    liveLink: 'https://example.com/project7',
+    sourceLink: 'https://github.com/example/project7',
+  },
+];
 
-// const projectsContainer = document.getElementById('work-container');
-// const popup = document.getElementById('popup');
-// const closeBtn = document.getElementById('close-btn');
-// const popupTitle = document.getElementById('popup-title');
-// const popupDescription = document.getElementById('popup-description');
-// const popupImage = document.getElementById('popup-image');
-// const popupTechnologies = document.getElementById('popup-technologies');
-// const liveLink = document.getElementById('live-link');
-// const sourceLink = document.getElementById('source-link');
+const showCaseBtns = document.querySelectorAll('#showcase-button');
+const popup = document.getElementById('popup');
+const closeBtn = document.querySelector('.close-btn');
+const popupTitle = document.getElementById('popup-title');
+const popupTitle2 = document.getElementById('popup-title2');
+const popupDescription = document.getElementById('popup-description');
+const popupImage = document.getElementById('popup-image');
+const popupTechnologiesOne = document.getElementById('popup-technologies-one');
+const popupTechnologiesTwo = document.getElementById('popup-technologies-two');
+const popupTechnologiesThree = document.getElementById('popup-technologies-three');
+const liveLink = document.getElementById('live-link');
+const sourceLink = document.getElementById('source-link');
 
-// // // Function to create project cards dynamically
-// // function createProjectCard(project) {
-// //   const card = document.createElement('div');
-// //   card.classList.add('project-card');
-// //   card.innerHTML = `
-// //     <img src="${project.image}" alt="Project Image">
-// //     <h3>${project.name}</h3>
-// //     <button class="details-btn">Details</button>
-// //   `;
-// //   return card;
-// // }
+showCaseBtns.forEach((showCaseBtn) => {
+  // eslint-disable-next-line func-names
+  showCaseBtn.addEventListener('click', function () {
+    const index = parseInt(this.getAttribute('data-index'), 10);
+    const element = projects[index];
 
-// // Function to show project details in the popup
-// function showProjectDetails(project) {
-//   popupTitle.textContent = project.name;
-//   popupDescription.textContent = project.description;
-//   popupImage.src = project.image;
-//   popupTechnologies.textContent = `Technologies: ${project.technologies}`;
-//   liveLink.href = project.liveLink;
-//   sourceLink.href = project.sourceLink;
+    // Function to show project details in the popup
+    popupTitle.textContent = element.name;
+    popupTitle2.textContent = element.name2;
+    popupDescription.textContent = element.description;
+    popupImage.src = element.image;
+    // eslint-disable-next-line prefer-destructuring
+    popupTechnologiesOne.textContent = element.technologies[0];
+    popupTechnologiesTwo.textContent = element.technologies[1];
+    popupTechnologiesThree.textContent = element.technologies[2];
+    liveLink.href = element.liveLink;
+    sourceLink.href = element.sourceLink;
 
-//   popup.style.display = 'block';
-// }
+    popup.style.display = 'block';
+  });
+});
 
-// // Function to hide the popup
-// function hidePopup() {
-//   popup.style.display = 'none';
-// }
-
-// // Event listener for details button click
-// projectsContainer.addEventListener('click', (event) => {
-//   if (event.target.classList.contains('showcase-btn')) {
-//     const projectIndex = event.target.parentElement.getAttribute('data-index');
-//     const project = projects[projectIndex];
-//     showProjectDetails(project);
-//   }
-// });
-
-// // Event listener for close button click
-// closeBtn.addEventListener('click', hidePopup);
-
-// // Render project cards
-// projects.forEach((project, index) => {
-//   const showCase = document.getElementById('showcase');
-//   project = showCase;
-//   showCase.setAttribute('data-index', index);
-//   // const card = createProjectCard(project);
-//   // card.setAttribute('data-index', index);
-//   // projectsContainer.appendChild(card);
-// });
+closeBtn.addEventListener('click', () => {
+  popup.style.display = 'none';
+});
