@@ -318,7 +318,7 @@ body {
   margin-right: 5px;
 }
 
-.showcase button {
+.showcase-btn {
   position: absolute;
   bottom: 0;
   right: 0;
@@ -1429,7 +1429,7 @@ body {
     width: 49%;
   }
 
-  /* .second-name {
+  .second-name {
     width: 49%;
-  } */
+  }
 }

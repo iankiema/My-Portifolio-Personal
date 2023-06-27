@@ -1,6 +1,3 @@
-/* eslint-disable prefer-destructuring */
-/* Menu Popup */
-
 const menuBar = document.querySelector('#menu-bar');
 const cancelIcon = document.querySelector('#cancel-icon');
 const topNav = document.querySelector('.mobileLinks');
@@ -26,6 +23,114 @@ cancelIcon.addEventListener('click', hideMenuFunction);
 mobLink.addEventListener('click', () => { topNav.style.display = 'none'; });
 
 /* Details popup window */
+
+const projectData = [
+  {
+    id: '1',
+    image: 'images/Img Placeholder (3).png',
+    alt: 'project image',
+    title: 'Professional Art Printing Data',
+    content: 'A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industrys standard.',
+    technologies: ['Html', 'Bootstrap', 'Ruby'],
+    buttonContent: 'See project',
+  },
+  {
+    id: '2',
+    image: 'images/Img Placeholder (2).png',
+    alt: 'project image',
+    title: 'Professional Art Printing Data',
+    content: 'A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industrys standard.',
+    technologies: ['Html', 'Bootstrap', 'Ruby'],
+    buttonContent: 'See project',
+  },
+  {
+    id: '3',
+    image: 'images/Img Placeholder (2).png',
+    alt: 'project image',
+    title: 'Professional Art Printing Data',
+    content: 'A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industrys standard.',
+    technologies: ['Html', 'Bootstrap', 'Ruby'],
+    buttonContent: 'See project',
+  },
+  {
+    id: '4',
+    image: 'images/Img Placeholder (4).png',
+    alt: 'project image',
+    title: 'Professional Art Printing Data',
+    content: 'A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industrys standard.',
+    technologies: ['Html', 'Bootstrap', 'Ruby'],
+    buttonContent: 'See project',
+  },
+  {
+    id: '5',
+    image: 'images/Img Placeholder (3).png',
+    alt: 'project image',
+    title: 'Professional Art Printing Data',
+    content: 'A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industrys standard.',
+    technologies: ['Html', 'Bootstrap', 'Ruby'],
+    buttonContent: 'See project',
+  },
+  {
+    id: '6',
+    image: 'images/Img Placeholder (2).png',
+    alt: 'project image',
+    title: 'Professional Art Printing Data',
+    content: 'A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industrys standard.',
+    technologies: ['Html', 'Bootstrap', 'Ruby'],
+    buttonContent: 'See project',
+  },
+];
+
+const projectsSection = document.getElementById('project-container');
+
+projectData.forEach((project, index) => {
+  const showcaseDiv = document.createElement('div');
+  showcaseDiv.classList.add('showcase');
+  showcaseDiv.id = 'showcase';
+
+  const imageDiv = document.createElement('div');
+  imageDiv.classList.add('showcase-image');
+
+  const image = document.createElement('img');
+  image.src = project.image;
+  image.alt = project.alt;
+  imageDiv.appendChild(image);
+
+  const detailDiv = document.createElement('div');
+  detailDiv.classList.add('showcase-detail');
+
+  const title = document.createElement('h2');
+  title.textContent = project.title;
+
+  const description = document.createElement('p');
+  description.textContent = project.content;
+
+  const technologiesList = document.createElement('ul');
+
+  const technologies = ['HTML', 'Bootstrap', 'Ruby'];
+  technologies.forEach((technology) => {
+    const technologyItem = document.createElement('li');
+    technologyItem.textContent = technology;
+    technologiesList.appendChild(technologyItem);
+  });
+
+  detailDiv.appendChild(title);
+  detailDiv.appendChild(description);
+  detailDiv.appendChild(technologiesList);
+
+  const button = document.createElement('button');
+  button.id = 'showcase-button';
+  button.classList.add('showcase-btn');
+  button.type = 'button';
+  button.dataset.index = index.toString();
+  button.textContent = project.buttonContent;
+
+  showcaseDiv.appendChild(imageDiv);
+  showcaseDiv.appendChild(detailDiv);
+  showcaseDiv.appendChild(button);
+
+  projectsSection.appendChild(showcaseDiv);
+});
 
 const projects = [
   {
@@ -106,26 +211,27 @@ const popupTechnologiesThree = document.getElementById('popup-technologies-three
 const liveLink = document.getElementById('live-link');
 const sourceLink = document.getElementById('source-link');
 
+function handleClick() {
+  const index = parseInt(this.getAttribute('data-index'), 10);
+  const element = projects[index];
+
+  // Function to show project details in the popup
+  popupTitle.textContent = element.name;
+  popupTitle2.textContent = element.name2;
+  popupDescription.textContent = element.description;
+  popupImage.src = element.image;
+  const [technology1, technology2, technology3] = element.technologies;
+  popupTechnologiesOne.textContent = technology1;
+  popupTechnologiesTwo.textContent = technology2;
+  popupTechnologiesThree.textContent = technology3;
+  liveLink.href = element.liveLink;
+  sourceLink.href = element.sourceLink;
+
+  popup.style.display = 'block';
+}
+
 showCaseBtns.forEach((showCaseBtn) => {
-  // eslint-disable-next-line func-names
-  showCaseBtn.addEventListener('click', function () {
-    const index = parseInt(this.getAttribute('data-index'), 10);
-    const element = projects[index];
-
-    // Function to show project details in the popup
-    popupTitle.textContent = element.name;
-    popupTitle2.textContent = element.name2;
-    popupDescription.textContent = element.description;
-    popupImage.src = element.image;
-    // eslint-disable-next-line prefer-destructuring
-    popupTechnologiesOne.textContent = element.technologies[0];
-    popupTechnologiesTwo.textContent = element.technologies[1];
-    popupTechnologiesThree.textContent = element.technologies[2];
-    liveLink.href = element.liveLink;
-    sourceLink.href = element.sourceLink;
-
-    popup.style.display = 'block';
-  });
+  showCaseBtn.addEventListener('click', handleClick);
 });
 
 closeBtn.addEventListener('click', () => {
