@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Crete+Round:wght@300;400;500;600;700;800&family=Inter:wght@100;300;400;500;600;700;800&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Crete+Round:wght@300;400;500;600;700;800&family=Inter:wght@100;300;400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap");
 
 :root {
   --primary-font: "Crete Round", sans-serif;
@@ -538,7 +538,7 @@ body {
 }
 
 .popup-header h2 {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 32px;
   font-weight: 400;
   line-height: 44px;
@@ -761,7 +761,8 @@ body {
   border-bottom: 1px solid #dbd8d7;
   padding: 14px 12px;
   margin-bottom: 24px;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-size: 15px;
   font-weight: 25px;
   font-weight: 400;
@@ -962,7 +963,9 @@ body {
   }
 
   .info-title {
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+      Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+      sans-serif;
     font-weight: 700;
     font-size: 24px;
     line-height: 32px;
@@ -1113,7 +1116,7 @@ body {
 
   #popup-title2 {
     display: block;
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
     font-size: 28px;
     font-weight: 400;
     line-height: 44px;
@@ -1429,7 +1432,7 @@ body {
     width: 49%;
   }
 
-  /* .second-name {
+  .second-name {
     width: 49%;
-  } */
+  }
 }
