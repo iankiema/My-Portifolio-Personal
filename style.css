@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Crete+Round:wght@300;400;500;600;700;800&family=Inter:wght@100;300;400;500;600;700;800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+
 :root {
   --primary-font: "Crete Round", sans-serif;
   --secondary-font: "Inter", sans-serif;
@@ -65,6 +66,14 @@ body {
 .nav-links li {
   margin-left: 32px;
   cursor: pointer;
+}
+
+.popup-links a {
+  background-color: var(--secondary-color);
+  color: #fff;
+  padding: 12px;
+  text-decoration: none;
+  margin-right: 10px;
 }
 
 .nav-links li a {
@@ -373,6 +382,15 @@ body {
   gap: 10px;
 }
 
+.popup-content button {
+  top: 10%;
+  background: transparent;
+  border: none;
+  font-size: 30px;
+  color: #67798e;
+  float: right;
+}
+
 .my-details button:hover {
   color: var(--secondary-color);
   background: #fff5e1;
@@ -498,15 +516,6 @@ body {
   z-index: 9999;
 }
 
-.popup-content button {
-  top: 10%;
-  background: transparent;
-  border: none;
-  font-size: 30px;
-  color: #67798e;
-  float: right;
-}
-
 .popup-header ul {
   list-style-type: none;
   display: flex;
@@ -529,13 +538,13 @@ body {
 }
 
 .popup-header h2 {
-  font-family: 'Roboto';
+  font-family: 'Roboto', sans-serif;
   font-size: 32px;
   font-weight: 400;
   line-height: 44px;
-  letter-spacing: 0em;
+  letter-spacing: 0;
   text-align: left;
-  color: #172B4D;
+  color: #172b4d;
 }
 
 #popup-title2 {
@@ -566,7 +575,7 @@ body {
   font-size: 16px;
   font-weight: 400;
   line-height: 30px;
-  letter-spacing: 0em;
+  letter-spacing: 0;
   text-align: left;
   color: #344563;
 }
@@ -576,14 +585,6 @@ body {
   width: 100%;
   height: auto;
   margin-bottom: 20px;
-}
-
-.popup-links a {
-  background-color: var(--secondary-color);
-  color: #fff;
-  padding: 12px;
-  text-decoration: none;
-  margin-right: 10px;
 }
 
 .popup-links img {
@@ -895,6 +896,13 @@ body {
     margin-right: 20px;
   }
 
+  .popup-links a {
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 24px;
+    margin-right: 0;
+  }
+
   .social-icons li a {
     width: 50%;
   }
@@ -1105,13 +1113,13 @@ body {
 
   #popup-title2 {
     display: block;
-    font-family: 'Roboto';
+    font-family: 'Roboto', sans-serif;
     font-size: 28px;
     font-weight: 400;
     line-height: 44px;
-    letter-spacing: 0em;
+    letter-spacing: 0;
     text-align: left;
-    color: #172B4D;
+    color: #172b4d;
   }
 
   .popup-body {
@@ -1141,13 +1149,6 @@ body {
   .popup-links {
     width: 100%;
     justify-content: space-between;
-  }
-
-  .popup-links a {
-   font-size: 15px;
-   font-weight: 700;
-   line-height: 24px;
-   margin-right: 0;
   }
 
   /* About me mobile responsive */
@@ -1428,7 +1429,7 @@ body {
     width: 49%;
   }
 
-  .second-name {
+  /* .second-name {
     width: 49%;
-  }
+  } */
 }
