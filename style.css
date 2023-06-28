@@ -8,13 +8,13 @@
   --secondary-color: #943e00;
 }
 
-/* * {
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   border: 1 solid green;
   scroll-behavior: smooth;
-} */
+}
 
 body {
   font-family: sans-serif;
