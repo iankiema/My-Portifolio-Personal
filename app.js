@@ -157,6 +157,14 @@ projectData.forEach((project, index) => {
   const description = document.createElement('p');
   description.textContent = project.content;
 
+  const technologiesList = document.createElement('ul');
+  const technologies = ['HTML', 'Bootstrap', 'Ruby'];
+  technologies.forEach((technology) => {
+    const technologyItem = document.createElement('li');
+    technologyItem.textContent = technology;
+    technologiesList.appendChild(technologyItem);
+  });
+
   detailDiv.appendChild(title);
   detailDiv.appendChild(description);
   detailDiv.appendChild(technologiesList);
@@ -350,4 +358,44 @@ showCaseBtns.forEach((showCaseBtn) => {
 
 btnClose.addEventListener('click', () => {
   popup.style.display = 'none';
+});
+
+/* Form validation */
+
+const form = document.querySelector('form');
+const email = document.getElementById('mail');
+const submitBtn = document.getElementById('contact-btn');
+const error = submitBtn.nextElementSibling;
+
+const emailRegExp = /^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$/;
+
+window.addEventListener('load', () => {
+  const isValid = email.value.length === 0 || emailRegExp.test(email.value);
+  email.className = isValid ? 'valid' : 'invalid';
+});
+
+email.addEventListener('input', () => {
+  const isValid = email.value.length === 0 || emailRegExp.test(email.value);
+  if (isValid) {
+    email.className = 'valid';
+    error.textContent = '';
+    error.className = 'error';
+  } else {
+    email.className = 'invalid';
+  }
+});
+
+form.addEventListener('submit', (event) => {
+  event.preventDefault();
+
+  const isValid = email.value.length === 0 || emailRegExp.test(email.value);
+  if (!isValid) {
+    email.className = 'invalid';
+    error.textContent = 'The email text has to be in small letters';
+    error.className = 'error active';
+  } else {
+    email.className = 'valid';
+    error.textContent = '';
+    error.className = 'error';
+  }
 });
