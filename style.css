@@ -553,10 +553,11 @@ body {
 
 .popup-img {
   position: relative;
-  width: 55%;
+  width: 50%;
 }
 
 #popup-image {
+  position: relative;
   max-width: 100%;
   height: auto;
 }
@@ -565,7 +566,7 @@ body {
   display: flex;
   position: relative;
   flex-direction: column;
-  width: 38%;
+  width: 45%;
   padding-left: 15px;
   justify-content: space-between;
 }
@@ -587,12 +588,12 @@ body {
   margin-bottom: 20px;
 }
 
-.popup-links img {
+.link-img-one {
   color: #fff;
   width: 18px;
   height: 18px;
   align-self: center;
-  margin-top: 15px;
+  padding-left: 5px;
 }
 
 .close {
@@ -1169,8 +1170,12 @@ body {
   }
 
   .popup-links {
-    width: 100%;
+    display: flex;
     justify-content: space-between;
+    margin: auto;
+    margin-top: 20px;
+    width: 100%;
+    height: auto;
   }
 
   /* About me mobile responsive */

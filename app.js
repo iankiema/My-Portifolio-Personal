@@ -23,6 +23,58 @@ cancelIcon.addEventListener('click', hideMenuFunction);
 mobLink.addEventListener('click', () => { topNav.style.display = 'none'; });
 
 /* Details popup window */
+const mainData = {
+  id: '0',
+  image: 'images/Img Placeholder (3).png',
+  alt: 'project image',
+  title: 'Multistories',
+  content: 'A daily selection of privately personalized reads; no accounts or sign-ups required. This has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.',
+  technologies: ['Html', 'Bootstrap', 'Ruby'],
+  buttonContent: 'See project',
+};
+
+const mainProject = document.getElementById('main-project');
+const technologiesList = document.createElement('ul');
+const technologies = ['HTML', 'Bootstrap', 'Ruby'];
+technologies.forEach((technology) => {
+  const technologyItem = document.createElement('li');
+  technologyItem.textContent = technology;
+  technologiesList.appendChild(technologyItem);
+});
+
+const mainImg = document.createElement('div');
+mainImg.classList.add('main-img');
+const mainImage = document.createElement('img');
+mainImage.classList.add('main-Image');
+mainImage.src = 'images/Img Placeholder.png';
+mainImg.appendChild(mainImage);
+const mainContent = document.createElement('div');
+mainContent.classList.add('main-content');
+const mainTitle = document.createElement('h2');
+mainTitle.classList.add('main-title');
+mainContent.classList.add('main-content');
+mainTitle.textContent = 'Multi Post Stories';
+const mainParag = document.createElement('p');
+mainParag.classList.add('main-parag');
+mainParag.textContent = mainData.content;
+
+const mainList = document.createElement('ul');
+mainList.classList.add('main-list');
+mainList.appendChild(technologiesList);
+const mainAnchor = document.createElement('a');
+const mainButton = document.createElement('button');
+mainButton.classList.add('main-btn');
+mainButton.id = 'showcase-button';
+mainButton.textContent = 'See Project';
+mainAnchor.appendChild(mainButton);
+
+mainContent.appendChild(mainTitle);
+mainContent.appendChild(mainParag);
+mainContent.appendChild(mainList);
+mainContent.appendChild(mainAnchor);
+
+mainProject.appendChild(mainImg);
+mainProject.appendChild(mainContent);
 
 const projectData = [
   {
@@ -105,15 +157,6 @@ projectData.forEach((project, index) => {
   const description = document.createElement('p');
   description.textContent = project.content;
 
-  const technologiesList = document.createElement('ul');
-
-  const technologies = ['HTML', 'Bootstrap', 'Ruby'];
-  technologies.forEach((technology) => {
-    const technologyItem = document.createElement('li');
-    technologyItem.textContent = technology;
-    technologiesList.appendChild(technologyItem);
-  });
-
   detailDiv.appendChild(title);
   detailDiv.appendChild(description);
   detailDiv.appendChild(technologiesList);
@@ -133,6 +176,15 @@ projectData.forEach((project, index) => {
 });
 
 const projects = [
+  {
+    name: 'Keeping track of hundreds  of components website',
+    name2: 'Multi Post Stories',
+    description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.',
+    image: 'images/Snapshoot Portfolio.jpg',
+    technologies: ['HTML', 'CSS', 'Javascript'],
+    liveLink: 'https://example.com/project1',
+    sourceLink: 'https://github.com/example/project1',
+  },
   {
     name: 'Keeping track of hundreds  of components website',
     name2: 'Multi Post Stories',
@@ -199,33 +251,95 @@ const projects = [
 ];
 
 const showCaseBtns = document.querySelectorAll('#showcase-button');
+
 const popup = document.getElementById('popup');
-const closeBtn = document.querySelector('.close-btn');
-const popupTitle = document.getElementById('popup-title');
-const popupTitle2 = document.getElementById('popup-title2');
-const popupDescription = document.getElementById('popup-description');
-const popupImage = document.getElementById('popup-image');
-const popupTechnologiesOne = document.getElementById('popup-technologies-one');
-const popupTechnologiesTwo = document.getElementById('popup-technologies-two');
-const popupTechnologiesThree = document.getElementById('popup-technologies-three');
-const liveLink = document.getElementById('live-link');
-const sourceLink = document.getElementById('source-link');
+const popupContent = document.createElement('div');
+popupContent.classList.add('popup-content');
+popupContent.id = 'popup-content';
+const popupHeader = document.createElement('div');
+popupHeader.classList.add('popup-header');
+const btnClose = document.createElement('button');
+btnClose.classList.add('close-btn');
+btnClose.textContent = '';
+const btnCloseImage = document.createElement('img');
+btnCloseImage.src = 'images/cancelBtn.svg';
+btnClose.appendChild(btnCloseImage);
+const titleOne = document.createElement('h2');
+titleOne.id = 'popup-title';
+const titleTwo = document.createElement('h2');
+titleTwo.id = 'popup-title2';
+const popupUl = document.createElement('ul');
+popupHeader.appendChild(btnClose);
+popupHeader.appendChild(titleOne);
+popupHeader.appendChild(titleTwo);
+popupHeader.appendChild(popupUl);
+
+const popupBody = document.createElement('div');
+popupBody.classList.add('popup-body');
+const popupImg = document.createElement('div');
+popupImg.classList.add('popoup-img');
+const popImage = document.createElement('img');
+popImage.classList.add('popup-image');
+popImage.id = 'popup-image';
+popImage.alt = 'Project Image';
+popupImg.appendChild(popImage);
+
+const popupDescLink = document.createElement('div');
+popupDescLink.classList.add('popup-desclink');
+const popupDesc = document.createElement('div');
+popupDesc.classList.add = 'popup-desc';
+const popupDescriptions = document.createElement('p');
+popupDescriptions.id = 'popup-description';
+popupDesc.appendChild(popupDescriptions);
+
+const popupLinks = document.createElement('div');
+popupLinks.classList = 'popoup-links';
+popupLinks.id = 'popup-links';
+popupLinks.classList.add('popup-links');
+const liveLinks = document.createElement('a');
+liveLinks.id = 'live-link';
+liveLinks.target = '_blank';
+liveLinks.textContent = 'Live Version';
+const linkImageOne = document.createElement('img');
+linkImageOne.classList.add('link-img-one');
+linkImageOne.src = 'images/Icon -GitHub.svg';
+liveLinks.appendChild(linkImageOne);
+const sourceLinks = document.createElement('a');
+sourceLinks.id = 'source-link';
+sourceLinks.target = '_blank';
+sourceLinks.textContent = 'See Source';
+const sourceLinkImage = document.createElement('img');
+sourceLinkImage.classList.add('link-img-one');
+sourceLinkImage.src = 'images/Icon-see live.svg';
+sourceLinks.appendChild(sourceLinkImage);
+
+popupLinks.appendChild(liveLinks);
+popupLinks.appendChild(sourceLinks);
+popupDescLink.appendChild(popupDesc);
+popupDescLink.appendChild(popupLinks);
+
+popupBody.appendChild(popupImg);
+popupBody.appendChild(popupDescLink);
+popupContent.appendChild(popupHeader);
+popupContent.appendChild(popupBody);
+popup.appendChild(popupContent);
 
 function handleClick() {
-  const index = parseInt(this.getAttribute('data-index'), 10);
+  const index = parseInt(this.dataset.index, 10);
   const element = projects[index];
 
   // Function to show project details in the popup
-  popupTitle.textContent = element.name;
-  popupTitle2.textContent = element.name2;
-  popupDescription.textContent = element.description;
-  popupImage.src = element.image;
-  const [technology1, technology2, technology3] = element.technologies;
-  popupTechnologiesOne.textContent = technology1;
-  popupTechnologiesTwo.textContent = technology2;
-  popupTechnologiesThree.textContent = technology3;
-  liveLink.href = element.liveLink;
-  sourceLink.href = element.sourceLink;
+  titleOne.textContent = element.name;
+  titleTwo.textContent = element.name2;
+  popImage.src = element.image;
+  popupDescriptions.textContent = element.description;
+  liveLinks.href = element.liveLink;
+  sourceLinks.href = element.sourceLink;
+  element.technologies.forEach((technology) => {
+    const technologyLi = document.createElement('li');
+    technologyLi.textContent = technology;
+    popupUl.appendChild(technologyLi);
+  });
 
   popup.style.display = 'block';
 }
@@ -234,6 +348,6 @@ showCaseBtns.forEach((showCaseBtn) => {
   showCaseBtn.addEventListener('click', handleClick);
 });
 
-closeBtn.addEventListener('click', () => {
+btnClose.addEventListener('click', () => {
   popup.style.display = 'none';
 });
