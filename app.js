@@ -157,6 +157,14 @@ projectData.forEach((project, index) => {
   const description = document.createElement('p');
   description.textContent = project.content;
 
+  const technologiesList = document.createElement('ul');
+  const technologies = ['HTML', 'Bootstrap', 'Ruby'];
+  technologies.forEach((technology) => {
+    const technologyItem = document.createElement('li');
+    technologyItem.textContent = technology;
+    technologiesList.appendChild(technologyItem);
+  });
+
   detailDiv.appendChild(title);
   detailDiv.appendChild(description);
   detailDiv.appendChild(technologiesList);
