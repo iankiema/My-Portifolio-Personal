@@ -402,22 +402,29 @@ form.addEventListener('submit', (event) => {
 
 /* Preserve to local storage */
 
-if (localStorage.getItem('formData')) {
-  const formData = JSON.parse(localStorage.getItem('formData'));
-  document.getElementById('fullname').value = formData.name;
-  document.getElementById('mail').value = formData.email;
-  document.getElementById('message').value = formData.message;
+const fullNameInfo = document.getElementById('fullname');
+const emailInfo = document.getElementById('mail');
+const messageInfo = document.getElementById('message');
+
+function savedFormData() {
+  const formData = {
+    fullname: fullNameInfo.value,
+    email: emailInfo.value,
+    message: messageInfo.value,
+  };
+  localStorage.setItem('formData', JSON.stringify(formData));
 }
 
-document.getElementById('contact-form').addEventListener('submit', (event) => {
-  event.preventDefault();
-  const formData = {
-    name: document.getElementById('fullname').value,
-    email: document.getElementById('mail').value,
-    message: document.getElementById('message').value,
-  };
+fullNameInfo.addEventListener('input', savedFormData);
+emailInfo.addEventListener('input', savedFormData);
+messageInfo.addEventListener('input', savedFormData);
 
-  localStorage.setItem('formData', JSON.stringify(formData));
-
-  document.getElementById('contact-form').reset();
+window.addEventListener('load', () => {
+  const savedData = localStorage.getItem('formData');
+  if (savedData) {
+    const formData = JSON.parse(savedData);
+    fullNameInfo.value = formData.fullname;
+    emailInfo.value = formData.email;
+    messageInfo.value = formData.message;
+  }
 });
