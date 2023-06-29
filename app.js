@@ -402,22 +402,22 @@ form.addEventListener('submit', (event) => {
 
 /* Preserve to local storage */
 
-if (localStorage.getItem('formData')) {
-  const formData = JSON.parse(localStorage.getItem('formData'));
-  document.getElementById('fullname').value = formData.name;
-  document.getElementById('mail').value = formData.email;
-  document.getElementById('message').value = formData.message;
-}
+// if (localStorage.getItem('formData')) {
+//   const formData = JSON.parse(localStorage.getItem('formData'));
+//   document.getElementById('fullname').value = formData.name;
+//   document.getElementById('mail').value = formData.email;
+//   document.getElementById('message').value = formData.message;
+// }
 
-document.getElementById('contact-form').addEventListener('submit', (event) => {
-  event.preventDefault();
-  const formData = {
-    name: document.getElementById('fullname').value,
-    email: document.getElementById('mail').value,
-    message: document.getElementById('message').value,
-  };
+// document.getElementById('contact-form').addEventListener('submit', (event) => {
+//   event.preventDefault();
+//   const formData = {
+//     name: document.getElementById('fullname').value,
+//     email: document.getElementById('mail').value,
+//     message: document.getElementById('message').value,
+//   };
 
-  localStorage.setItem('formData', JSON.stringify(formData));
+//   localStorage.setItem('formData', JSON.stringify(formData));
 
-  document.getElementById('contact-form').reset();
-});
+//   document.getElementById('contact-form').reset();
+// });
