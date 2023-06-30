@@ -420,11 +420,11 @@ emailInfo.addEventListener('input', savedFormData);
 messageInfo.addEventListener('input', savedFormData);
 
 window.addEventListener('load', () => {
-  const savedData = localStorage.getItem('formData');
+  const savedData = localStorage.getItem('formDatas');
   if (savedData) {
     const formData = JSON.parse(savedData);
-    fullNameInfo.value = formData.fullname;
-    emailInfo.value = formData.email;
+    fullNameInfo.value = formData.fullnames;
+    emailInfo.value = formData.emails;
     messageInfo.value = formData.message;
   }
 });
