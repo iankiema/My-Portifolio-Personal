@@ -3,6 +3,22 @@ const cancelIcon = document.querySelector('#cancel-icon');
 const topNav = document.querySelector('.mobileLinks');
 const mobLink = document.querySelector('#mob-link');
 
+/* Navbar sticky position */
+
+const navContainer = document.getElementById('navbar');
+const sticky = navContainer.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    navContainer.classList.add('sticky');
+  } else {
+    navContainer.classList.remove('sticky');
+  }
+}
+window.onscroll = () => {
+  myFunction();
+};
+
 function showMenuFunction() {
   if (topNav.style.display === 'none') {
     topNav.style.display = ('block');

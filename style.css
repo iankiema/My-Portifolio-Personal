@@ -50,6 +50,16 @@ body {
   align-items: center;
 }
 
+.sticky{
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .main-container {
+  padding-top: 140px;
+}
+
 .nav-links {
   display: flex;
   justify-content: flex-end;
