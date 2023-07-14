@@ -50,7 +50,17 @@ body {
   align-items: center;
 }
 
-.sticky{
+.main-container {
+  height: calc(100% - 72px);
+  width: 100%;
+  margin-top: 192px;
+  margin-bottom: 251px;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.sticky {
   position: fixed;
   top: 0;
   width: 100%;
@@ -121,16 +131,6 @@ body {
 
 .mobileLinks {
   z-index: 10;
-}
-
-.main-container {
-  height: calc(100% - 72px);
-  width: 100%;
-  margin-top: 192px;
-  margin-bottom: 251px;
-  position: relative;
-  display: flex;
-  align-items: center;
 }
 
 .social-icons {
