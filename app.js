@@ -3,6 +3,22 @@ const cancelIcon = document.querySelector('#cancel-icon');
 const topNav = document.querySelector('.mobileLinks');
 const mobLink = document.querySelector('#mob-link');
 
+/* Navbar sticky position */
+
+const navContainer = document.getElementById('navbar');
+const sticky = navContainer.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    navContainer.classList.add('sticky');
+  } else {
+    navContainer.classList.remove('sticky');
+  }
+}
+window.onscroll = () => {
+  myFunction();
+};
+
 function showMenuFunction() {
   if (topNav.style.display === 'none') {
     topNav.style.display = ('block');
@@ -420,11 +436,11 @@ emailInfo.addEventListener('input', savedFormData);
 messageInfo.addEventListener('input', savedFormData);
 
 window.addEventListener('load', () => {
-  const savedData = localStorage.getItem('formData');
+  const savedData = localStorage.getItem('formDatas');
   if (savedData) {
     const formData = JSON.parse(savedData);
-    fullNameInfo.value = formData.fullname;
-    emailInfo.value = formData.email;
+    fullNameInfo.value = formData.fullnames;
+    emailInfo.value = formData.emails;
     messageInfo.value = formData.message;
   }
 });

@@ -89,7 +89,7 @@ Run this commands:
 
 ```sh
   cd my-folder
-  git clone git@github.com:iankiema/My-Personal-Portifolio.git
+  git clone git@github.com:iankiema/Harmony-Fest.gitgit
 ```
 
 ### Install
@@ -137,8 +137,10 @@ Run this  command:
 ## 🔭 Future Features <a name="future-features"></a>
 
 
-- [ ] **Working Menubar**
-- [ ] **Working See project button**
+- [ ] **Program page**
+- [ ] **Join page**
+- [ ] **Sponsor page**
+- [ ] **News page**
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -165,7 +167,7 @@ If you like this project give it a star⭐️.
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-I would like to thank Microverse for the overwhelming support and also thank Faiz Mohammad for assisting me in this project.
+I would like to thank Microverse for the overwhelming support in this project.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
