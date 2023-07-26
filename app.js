@@ -95,11 +95,11 @@ mainProject.appendChild(mainContent);
 const projectData = [
   {
     id: '1',
-    image: 'images/Img Placeholder (3).png',
+    image: 'images/Harmony-Fest.JPG',
     alt: 'project image',
-    title: 'Professional Art Printing Data',
-    content: 'A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industrys standard.',
-    technologies: ['Html', 'Bootstrap', 'Ruby'],
+    title: 'Harmony Fest Website',
+    content: 'HarmonyFest is a dynamic and immersive music event that celebrates the power of music in bringing people together.',
+    technologies: ['Html', 'Bootstrap', 'Javascript'],
     buttonContent: 'See project',
   },
   {
@@ -201,13 +201,13 @@ projectData.forEach((project, index) => {
 
 const projects = [
   {
-    name: 'Keeping track of hundreds  of components website',
+    name: 'Harmony Fest Website',
     name2: 'Multi Post Stories',
-    description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.',
-    image: 'images/Snapshoot Portfolio.jpg',
+    description: 'Harmony Fest is an exciting and innovative online platform that celebrates the beauty of music and brings together music enthusiasts from all around the world.This website was built with HTML, CSS and Javascript.',
+    image: 'images/Harmony-desktop.JPG',
     technologies: ['HTML', 'CSS', 'Javascript'],
-    liveLink: 'https://example.com/project1',
-    sourceLink: 'https://github.com/example/project1',
+    liveLink: 'https://iankiema.github.io/Harmony-Fest/',
+    sourceLink: 'https://github.com/iankiema/Harmony-Fest',
   },
   {
     name: 'Keeping track of hundreds  of components website',
